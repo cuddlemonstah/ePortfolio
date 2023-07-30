@@ -14,7 +14,7 @@
 }
 html{
   height: 100%;
-  overflow: hidden;
+  overflow: auto;
   background: radial-gradient(ellipse at bottom,#30033b,#191825);
 }
 
@@ -867,11 +867,17 @@ header::after{
 
 @keyframes animStar {
   from{
-    transform: translateY(0px);
+    transform: translateY(0px); 
   }
   to{
     transform: translateY(-2000px);
   }
+}
+
+/* Contacts */
+.Contacts{
+  background: white;
+  margin-top: 60%;
 }
 /* Media Query for Responsive Styles */
 @media (max-width: 768px) {
