@@ -7,29 +7,31 @@
     <link rel="stylesheet" href="./css/contact-style.css" />
     <title>My ePortfolio</title>
   </head>
-
-    <header>
-      <h1
-        style="
-          font-family: 'Tektur', cursive;
-          font-size: 60px;
-          margin-left: 20px;
-          color: #ffa3fd;
-          background-color: var(--background-color);
-        "
-      >
-        JDT
-      </h1>
-      <nav>
-        <ul class="nav-links">
-          <a href="#Home"><li id="Home">Home</li></a>
-          <a href="Projects.html"><li id="Projects">Projects</li></a>
-          <a href="#Contacts"><li id="Contacts">Contacts</li></a>
-        </ul>
-      </nav>
+  <body>
+    <header class="shadow-nav">
+      <div class="header">
+        <h1
+          style="
+            font-family: 'Tektur', cursive;
+            font-size: 60px;
+            margin-left: 20px;
+            color: #ffa3fd;
+            background-color: var(--background-color);
+          "
+        >
+          JDT
+        </h1>
+        <nav>
+          <ul class="nav-links">
+            <a href="#Home-sec"><li id="Home">Home</li></a>
+            <a href="#Contact-sec"><li id="Contacts">Contacts</li></a>
+            <a href="Projects.html"><li id="Projects">Projects</li></a>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <section name="Home" class="wrapper">
+    <section id="Home-sec" name="Home" class="wrapper">
       <div id="stars"></div>
       <div id="stars2"></div>
       <div id="stars3"></div>
@@ -38,38 +40,91 @@
         <br />
         <section class="jobs">
           <div id="static-txt">I'm a</div>
-          <ul id="dynamic-txt">
-            <li id="game-dev"><span>Game Developer</span></li>
-            <li id="web-dev"><span>Web Developer</span></li>
-            <li id="soft-dev"><span>Software Developer</span></li>
-          </ul>
+          <div class="dynamic-txt" id="game-dev">
+            <p>Game Developer</p>
+          </div>
+          <div class="dynamic-txt" id="web-dev"><p>Web Developer</p></div>
+          <div class="dynamic-txt" id="soft-dev">
+            <p>Software Developer</p>
+          </div>
         </section>
       </div>
     </section>
 
-    <section>
+    <section id="Contact-sec">
       <div class="wave wave1"></div>
       <div class="wave wave2"></div>
       <div class="wave wave3"></div>
       <div class="wave wave4"></div>
       <div class="Contacts">
-        <h1 id="Contacts">Contacts</h1>
-        <address>
-          <a href="mailto: killingspreeisthegreat99@gmail.com"
-            >killingspreeisthegreat99@gmail.com</a>
-          <br />
-          <a href="tel: +649951536632">(+64) 9951536632</a> <br />
-          <h3>Social Media</h3>
-          <p>
-            Facebook:
-            <a href="https://www.facebook.com/jandale.topacio">Jandale Topacio</a>
-          </p>
-          <p>
-            Twitter:
-            <a href="https://twitter.com/CuddleMonstahh">@CuddleMonstahh</a>
-          </p>
-        </address>
+        <div id="Contact-bg"></div>
+        <div class="Contact-container">
+          <div class="Ring">
+            <span style="--i: 1">C</span>
+            <span style="--i: 2">O</span>
+            <span style="--i: 3">N</span>
+            <span style="--i: 4">T</span>
+            <span style="--i: 5">A</span>
+            <span style="--i: 6">C</span>
+            <span style="--i: 7">T</span>
+            <span style="--i: 8">S</span>
+            <span style="--i: 9">-</span>
+            <span style="--i: 10">C</span>
+            <span style="--i: 11">O</span>
+            <span style="--i: 12">N</span>
+            <span style="--i: 13">T</span>
+            <span style="--i: 14">A</span>
+            <span style="--i: 15">C</span>
+            <span style="--i: 16">T</span>
+            <span style="--i: 17">S</span>
+            <span style="--i: 18">-</span>
+            <span style="--i: 19">C</span>
+            <span style="--i: 20">O</span>
+            <span style="--i: 21">N</span>
+            <span style="--i: 22">T</span>
+            <span style="--i: 23">A</span>
+            <span style="--i: 24">C</span>
+            <span style="--i: 25">T</span>
+            <span style="--i: 26">S</span>
+            <span style="--i: 27">-</span>
+          </div>
+          <a href="mailto: killingspreeisthegreat99@gmail.com" target="_blank">
+            <img
+              src="./img/Gmail_Logo.png"
+              alt="Email: killingspreeisthegreat99@gmail.com"
+              class="moon-imgs"
+              id="gmail-png"
+            />
+          </a>
+          <a href="https://www.facebook.com/jandale.topacio" target="_blank">
+            <img
+              src="./img/Facebook_Logo.png"
+              alt="Facebook: Jandale Topacio"
+              class="moon-imgs"
+              id="facebook-png"
+            />
+            <a href="https://twitter.com/CuddleMonstahh" target="_blank"> </a>
+            <img
+              src="./img/Twitter_Logo.png"
+              alt="Twitter: @CuddleMonstahh"
+              class="moon-imgs"
+              id="twitter-png"
+            />
+          </a>
+        </div>
       </div>
     </section>
+
+    <!-- JAVASCRIPT-->
+    <script type="text/javascript" src="js/particles.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
